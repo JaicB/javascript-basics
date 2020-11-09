@@ -4,11 +4,17 @@
 
 //Code here
 
+const myName = 'Jake was here'
+console.log(myName)
+
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
 //Code here
+
+const myAge = 41
+console.log(myAge)
 
 //////////////////PROBLEM 3////////////////////
 
@@ -16,17 +22,26 @@
 
 //Code here
 
+const lovesCode = true
+console.log(lovesCode)
+
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
 //Code here
 
+const greatestFear = undefined
+console.log(greatestFear)
+
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
 //Code here
+
+const devMountainGoal = null
+console.log(devMountainGoal)
 
 //////////////////PROBLEM 6////////////////////
 
@@ -37,6 +52,11 @@
 
 //Code here
 
+function greeting(name){
+  return 'Hello, ' + name
+}
+
+greeting()
 
 //////////////////PROBLEM 7////////////////////
 
@@ -45,6 +65,12 @@
 
 //Code Here
 
+const newGreeting = function(name) {
+  return 'Hello, ' + name
+}
+
+newGreeting()
+
 //////////////////PROBLEM 8////////////////////
 
 //Rewrite the function greeting as an arrow function.
@@ -52,12 +78,19 @@
 
 //Code Here
 
+const finalGreeting = (name) => { 
+  return "Hello, " + name 
+}
+
+
 //////////////////PROBLEM 9////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
+
+const groceries = ['apples', 'milk', 'eggs', 'bread']
 
 //////////////////PROBLEM 10////////////////////
 
@@ -68,10 +101,20 @@
 
 //Code Here
 
+const dog = {
+  name: 'Rufus',
+  color: 'red, white, and blue',
+  age: 5,
+  goodBoy: true
+}
+
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
+
+console.log(dog.name)
+const devMountainClassPet = dog.name 
 
 //////////////////PROBLEM 11////////////////////
 
@@ -84,6 +127,21 @@
 
 // Code here
 
+function nameCheck(name) {
+  if(name === Steven) {
+    return 'What is up Steven?'
+  } else if(name === Bryan) {
+    return 'Hey Bryan! '
+  } else {
+    return 'Cool name, ' + name
+  }
+  const NAMEPARAM = nameCheck(name)
+}
+
+let NAMEPARAM = nameCheck(name)
+
+// console.log(nameCheck(name))
+
 //////////////////PROBLEM 12////////////////////
 
 // Create a function called add that takes in two parameters
@@ -92,10 +150,17 @@
 
 //Code Here
 
+function add(num1, num2) {
+  return num1 + num2;
+}
+
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
 //Code Here
+
+var mathSum = add(3, 4)
+
 
 //////////////////PROBLEM 13////////////////////
 
@@ -107,6 +172,20 @@
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
+
+function faveColorFinder(color) {
+  if (color == 'red') {
+    return 'red is a great color'
+  } else if (color == 'green') {
+    return 'green is a solid favorite color'
+  } else if (color == 'black') {
+    return 'so trendy'
+  } else {
+    return 'you need to evaluate your favorite color choice'
+  }
+}
+
+console.log(faveColorFinder(color))
 
 //////////////////PROBLEM 14////////////////////
 
@@ -146,6 +225,7 @@ let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 //Create a variable called age with your age assigned to you
 
 // Code Here
+
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
