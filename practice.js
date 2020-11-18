@@ -128,17 +128,17 @@ const devMountainClassPet = dog.name
 // Code here
 
 function nameCheck(name) {
-  if(name === Steven) {
+  if(name === 'Steven') {
     return 'What is up Steven?'
-  } else if(name === Bryan) {
-    return 'Hey Bryan! '
+  } else if(name === 'Bryan') {
+    return 'Hey Bryan!'
   } else {
     return 'Cool name, ' + name
   }
   const NAMEPARAM = nameCheck(name)
 }
 
-let NAMEPARAM = nameCheck(name)
+// let NAMEPARAM = nameCheck(name)
 
 // console.log(nameCheck(name))
 
@@ -174,18 +174,17 @@ var mathSum = add(3, 4)
 // Code here
 
 function faveColorFinder(color) {
-  if (color == 'red') {
+  if (color === 'red') {
     return 'red is a great color'
-  } else if (color == 'green') {
+  } else if (color === 'green') {
     return 'green is a solid favorite color'
-  } else if (color == 'black') {
+  } else if (color === 'black') {
     return 'so trendy'
   } else {
     return 'you need to evaluate your favorite color choice'
   }
 }
-
-console.log(faveColorFinder(color))
+// console.log(faveColorFinder(color))
 
 //////////////////PROBLEM 14////////////////////
 
@@ -209,29 +208,37 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 15////////////////////
 
 //Create a variable called age with your age assigned to you
 
 // Code Here
-
+var age = 41
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
 // Code Here
+const yearOlder = age + 1;
 
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
+var age = 41;
+
+myFunction();
+
+function myFunction() {
+  age = 999;
+}
